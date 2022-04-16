@@ -89,12 +89,27 @@ const Login = () => {
             .catch(error => alert(JSON.stringify(error.response.data, null, 2)))
     }
 
+    const registerNewUser = () => {
+
+    }
+
     return (
-        <StyledDiv>
-            <h1>Login</h1>
-            <input {...register("email")} type={"email"}/>
-            <input {...register("password")} type={"password"}/>
-            <button onClick={handleSubmit(submitLogin)}>Login</button>
+        <StyledDiv id={"login"}>
+            <h1 id={"login-header"}>
+                Login
+            </h1>
+            <label for={"email"}>
+                Email:
+                <input id={"email"}{...register("email")} type={"email"}/>
+            </label>
+            <label for={"password"}>
+                Password:
+                <input id={"password"}{...register("password")} type={"password"}/>
+            </label>
+            <div>
+                <button id={"login-button"}onClick={handleSubmit(submitLogin)}>Login</button>
+                <button id={"register-button"}onClick={handleSubmit(registerNewUser)}>Register</button>
+            </div>
         </StyledDiv>
     );
 }

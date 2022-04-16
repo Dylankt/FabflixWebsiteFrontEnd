@@ -9,8 +9,8 @@ const StyledH1 = styled.h1`
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div id={"home"}>
+            <h1 id={"homeheader"}>Home</h1>
         </div>
     );
 }

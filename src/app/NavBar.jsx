@@ -35,11 +35,11 @@ const StyledNavLink = styled(NavLink)`
  */
 const NavBar = () => {
     return (
-        <StyledNav>
-            <StyledNavLink to="/">
+        <StyledNav id={"NavBar"}>
+            <StyledNavLink to="/" id={"NavHome"}>
                 Home
             </StyledNavLink>
-            <StyledNavLink to="/login">
+            <StyledNavLink to="/login" id={"NavLogin"}>
                 Login
             </StyledNavLink>
         </StyledNav>
